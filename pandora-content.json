@@ -1,91 +1,134 @@
 {
   "food": {
     "awareness": {
+      "jtbd": {
+        "functional": "Get a meal with the least effort, time, and cost.",
+        "emotional": "Satisfy a craving or treat myself.",
+        "social": "Order for — or with — other people."
+      },
       "pains": [
         {
-          "t": "Cost is the top reason food delivery users decide not to order at all.",
-          "w": "In a 13,000+ user survey across APAC and EU, money concerns were the single most common barrier (44%) — ordering is perceived as a more expensive way to get food than cooking or eating out, so price-sensitive users opt out before they even browse.",
+          "t": "New food delivery users are forced to set a location before they can look around.",
+          "w": "Onboarding demands a location before showing any value. Evidence is mixed — some new users dislike being blocked from exploring first, while others find it reasonable for a food app — but for explore-first newcomers it's friction.",
+          "studies": [
+            "UXR#246",
+            "UXR#280",
+            "UXR#300"
+          ]
+        },
+        {
+          "t": "The sign-up wall stops new food delivery users from exploring first.",
+          "w": "Users want to browse restaurants before committing to sign-up/sign-in, but the app pushes registration early and the \"Skip\"/\"X\" option lacks context, so they feel forced in.",
+          "studies": [
+            "UXR#300"
+          ]
+        },
+        {
+          "t": "The first screen feels overwhelming to new food delivery users.",
+          "w": "For first-time visitors the homescreen is busy and hard to parse, adding cognitive load at the very first impression.",
+          "studies": [
+            "UXR#246",
+            "UXR#280"
+          ]
+        },
+        {
+          "t": "Expat food delivery users churn over language and translation gaps.",
+          "w": "Inconsistent translations (especially in menus and swimlanes) leave expats confused about shops vs. grocery, and can drive churn even before installing.",
+          "studies": [
+            "UXR#246",
+            "UXR#280"
+          ]
+        },
+        {
+          "t": "Food delivery users with accessibility needs feel shut out early.",
+          "w": "The app isn't perceived as accessible and the menu can feel overwhelming with assistive tech, disempowering A11Y users during discovery.",
+          "studies": [
+            "UXR#246",
+            "UXR#280"
+          ]
+        },
+        {
+          "t": "Cost makes food delivery users decide not to order at all.",
+          "w": "Money concerns are the single most common barrier (44%) — ordering is seen as pricier than cooking or eating out — so price-sensitive users opt out before browsing.",
           "studies": [
             "Restaurant Discovery Survey (APAC/EU)"
           ]
         },
         {
-          "t": "New food delivery users are gated by location and sign-up before they can explore.",
-          "w": "New users arrive curious to browse, but the app asks for a location and pushes sign-up/sign-in before showing value, and the first screen can feel overwhelming. Evidence on the location step is mixed - some users dislike being forced to set it before exploring, while others find location reasonable for a food app and instead object to the sign-up wall that follows (the unclear \"Skip\"/\"X\" is the real friction). The shared frustration is being blocked from exploring first.",
-          "studies": [
-            "UXR#280",
-            "UXR#246",
-            "UXR#300"
-          ]
-        },
-        {
-          "t": "Discovery shuts out food delivery users who are expats or have accessibility needs.",
-          "w": "Expat and accessibility (A11Y) users struggled to browse and get started: A11Y users find the app isn't perceived as accessible and can churn when the menu feels overwhelming, while expats hit language gaps — inconsistent translations (especially in menus and swimlanes) act as a churn driver even before install.",
-          "studies": [
-            "UXR#280",
-            "UXR#246"
-          ]
-        },
-        {
-          "t": "Savings are hard to see — deals, Pro and loyalty don't make their value obvious to food delivery users.",
-          "w": "Incentives are scattered with no single entry point and low visibility, so users scroll to hunt for deals, and promised new-user discounts don't always activate after sign-up. The subscription and loyalty story is just as murky: about 1 in 5 users never subscribe to Pro despite ordering enough to break even, ~53% of subscribers churn over low perceived value, and Pro prompts can appear even to ineligible users — while competitors' loyalty programs feel clearer and stronger.",
+          "t": "Deals are scattered, so food delivery users can't find them.",
+          "w": "Incentives have no single entry point and low visibility; finding a promotion is in fact the hardest task of the whole ordering journey in SEQ testing, so users scroll and hunt.",
           "studies": [
             "UXR#182",
             "UXR#192",
             "UXR#235",
-            "UXR#300",
-            "UXR#335",
-            "UXR#343",
-            "UXR#346",
-            "UXR#329",
-            "UXR#320",
             "UXR#330",
-            "UXR#275",
-            "Vendor Funded Deals (UXR)"
+            "UXR#329"
+          ]
+        },
+        {
+          "t": "Incentive clutter makes offers feel like noise to food delivery users.",
+          "w": "A crowded, uncoordinated presentation of banners means users must scan them one by one, so the deals read as clutter rather than help.",
+          "studies": [
+            "UXR#192"
           ],
           "quote": {
-            "text": "It looks complicated. There's no united UI... the banners are separated, so I have to look one by one.",
+            "text": "It looks complicated. There's no united UI, the banners are separated, so I have to look one by one.",
             "attribution": "food delivery user, TR"
           }
+        },
+        {
+          "t": "Pro's value is unclear, so food delivery users don't subscribe even when it pays off.",
+          "w": "About 1 in 5 users never subscribe despite ordering enough to break even, and ~53% of subscribers churn over low perceived value — benefits and savings feel murky, and Pro prompts can appear even to ineligible users.",
+          "studies": [
+            "UXR#335",
+            "UXR#343",
+            "UXR#320"
+          ]
+        },
+        {
+          "t": "Loyalty rewards feel weaker to food delivery users than competitors' programs.",
+          "w": "Users perceive rivals' loyalty schemes (points, cross-service perks, clear home-screen value) as stronger and easier to understand than Pandora's.",
+          "studies": [
+            "UXR#346"
+          ]
         }
       ],
       "delights": [
         {
           "t": "A straightforward sign-up gets new food delivery users moving quickly.",
-          "w": "New users called registration easy and it helped them get to their first order without friction.",
+          "w": "New users call registration easy, and it helps them reach a first order without friction.",
           "studies": [
-            "UXR#280",
-            "UXR#246"
+            "UXR#246",
+            "UXR#280"
           ]
         },
         {
           "t": "Seeing popular restaurants up front helps new and indecisive food delivery users start.",
-          "w": "Popular-restaurant and social-proof recommendations gave new and less-decisive users an easy way in, matching what indecisive users lean on to choose.",
+          "w": "Popular-restaurant and social-proof recommendations give newcomers and less-decisive users an easy way in.",
           "studies": [
-            "UXR#280",
-            "UXR#246"
+            "UXR#246",
+            "UXR#280"
           ]
         }
-      ],
-      "jtbd": {
-        "functional": "Get a meal with the least effort, time, and cost.",
-        "emotional": "Satisfy a craving or treat myself.",
-        "social": "Order for — or with — other people."
-      }
+      ]
     },
     "browse": {
+      "jtbd": {
+        "functional": "Find something I'll enjoy fast — matching my craving, my budget, and worth the money — without opening every restaurant.",
+        "emotional": "Decide with confidence and avoid the frustration of a disappointing order.",
+        "social": "Use other people's ratings and reviews to trust a place I haven't tried."
+      },
       "pains": [
         {
-          "t": "Discovery tools don't help food delivery users find or narrow to what they want.",
-          "w": "Two-thirds of users (66%) open the app with a dish or cuisine in mind, but search is restaurant-centric and returns the wrong things (drinks for \"pizza\", non-Indian for \"Indian\"; vendors that don't carry the dish), misleading vendor images create false expectations, and filters are hard to find and awkward (long cuisine lists, distrusted dietary filters, low usage). Empty and pre-search screens dead-end instead of guiding, so users abandon.",
+          "t": "Search returns the wrong things for food delivery users.",
+          "w": "Searching for a cuisine or dish surfaces vendors that don't match (drinks for \"pizza\", mostly non-Indian for \"Indian\"), which erodes trust in the assortment and drives drop-off.",
           "studies": [
             "UXR#350",
             "UXR#162",
+            "UXR#286",
             "Restaurant Discovery Survey (APAC/EU)",
-            "UXR#327",
             "UXR#371",
-            "UXR#329",
-            "UXR#286"
+            "UXR#329"
           ],
           "quote": {
             "text": "I searched for Indian and here is everything but indian. 4-5 restaurants before 2 indian options come up.",
@@ -93,13 +136,48 @@
           }
         },
         {
-          "t": "Food delivery users can't compare options side by side — and real price stays hidden until they open a menu.",
-          "w": "Comparing the same dish across vendors on price, deals and quality is a strong unmet need; today it means backing out and re-entering each store (web users even open one browser tab per restaurant to compare). The price ($) signal doesn't show actual price or minimum order value, so users still bounce after opening a vendor.",
+          "t": "Restaurants that don't carry the searched dish still show up.",
+          "w": "Vendors without the dish appear in results with no explanation, so users click through and find the item isn't there.",
+          "studies": [
+            "UXR#162",
+            "UXR#286"
+          ],
+          "quote": {
+            "text": "It's not helpful when you typed in vegetarian (pizza) and the first thing you see is meat (pizza).",
+            "attribution": "food delivery user, APAC"
+          }
+        },
+        {
+          "t": "The app is restaurant-first, but food delivery users think dish-first.",
+          "w": "Two-thirds open with a dish or cuisine in mind, yet discovery forces them through restaurants, adding steps to a dish-led goal.",
+          "studies": [
+            "UXR#286",
+            "UXR#327"
+          ],
+          "quote": {
+            "text": "It would be more logical to display the restaurants and the specific dish that's available in the restaurant.",
+            "attribution": "food delivery user"
+          }
+        },
+        {
+          "t": "Filters are hard to find and awkward, so food delivery users barely use them.",
+          "w": "Fewer than 5% of list sessions use filters — mostly because users don't notice them — and long cuisine lists plus distrusted dietary filters make narrowing tiring.",
+          "studies": [
+            "UXR#162",
+            "UXR#350"
+          ],
+          "quote": {
+            "text": "This is a lot of scrolling. Tell your colleagues I don't like scrolling too much.",
+            "attribution": "food delivery user, SG"
+          }
+        },
+        {
+          "t": "Food delivery users can't compare vendors side by side.",
+          "w": "Comparing the same dish across vendors on price, quality and deals means backing out and re-entering each store — web users even open one browser tab per restaurant to do it.",
           "studies": [
             "UXR#350",
             "UXR#162",
             "UXR#170",
-            "UXR#327",
             "UXR#286"
           ],
           "quote": {
@@ -108,36 +186,57 @@
           }
         },
         {
-          "t": "Faced with too many options, indecisive food delivery users fall back on a familiar place — or don't order.",
-          "w": "Roughly a third of users open the app without a firm choice; facing choice overload and not-always-relevant recommendations, indecisive users default to a \"safe\" familiar restaurant even when they wanted to explore, and some abandon the order entirely.",
+          "t": "The real price stays hidden until food delivery users open a menu.",
+          "w": "The price ($) signal doesn't show actual prices or minimum order value, so users open a vendor only to discover it's more expensive than expected.",
+          "studies": [
+            "UXR#162",
+            "UXR#286"
+          ],
+          "quote": {
+            "text": "I like to see the prices of the food on the picture rather than clicking onto the restaurant page only to find out it's 30 euro.",
+            "attribution": "food delivery user, EU"
+          }
+        },
+        {
+          "t": "Ratings are hard for food delivery users to trust.",
+          "w": "A high star rating from only a handful of reviewers reads as unreliable, and it's unclear why some vendors are surfaced as \"chosen\".",
+          "studies": [
+            "UXR#162"
+          ],
+          "quote": {
+            "text": "I don't trust this one because even if it's 5 stars but only 1 review.",
+            "attribution": "food delivery user, APAC"
+          }
+        },
+        {
+          "t": "Too many options leave indecisive food delivery users stuck.",
+          "w": "Facing choice overload and not-always-relevant recommendations, indecisive users default to a familiar \"safe\" restaurant even when they wanted to explore — or abandon the order.",
           "studies": [
             "Restaurant Discovery Survey (APAC/EU)"
           ]
         },
         {
-          "t": "Deals are confusing — food delivery users can't tell what applies or how much they'll actually save.",
-          "w": "Multiple overlapping incentives and unclear terms create overload, so users misjudge the real discount; the discount bar is easy to miss on the menu and voucher visibility/comprehension is low on both the vendor tile and menu, and accessing relevant promotions is high-importance, low-satisfaction.",
+          "t": "Deals are confusing — food delivery users can't tell what applies or how much they'll save.",
+          "w": "Multiple overlapping incentives and unclear terms create overload; the discount bar is easy to miss and voucher comprehension is low, so users misjudge the real saving.",
           "studies": [
             "UXR#182",
             "UXR#192",
-            "UXR#272",
-            "UXR#330",
-            "Vendor Funded Deals (UXR)"
+            "UXR#272"
           ]
         }
       ],
       "delights": [
         {
-          "t": "Food delivery users value being able to filter for free delivery.",
-          "w": "Every participant welcomed a free-delivery filter even when they didn't always need it — it maps directly to the budget-and-benefits lens users apply when deciding, and delivery fee is among the information they weigh most.",
+          "t": "Food delivery users value filtering for free delivery.",
+          "w": "Every participant welcomed a free-delivery filter even when they didn't always need it — it maps to the budget lens they apply when deciding.",
           "studies": [
             "UXR#162",
             "Restaurant Discovery Survey (APAC/EU)"
           ]
         },
         {
-          "t": "A relevant deal helps food delivery users decide — and feels genuinely rewarding.",
-          "w": "Discounts help less-decisive users commit to a choice, and a good, applicable deal lifts how users feel about the order — especially where prices feel high, a discount makes the purchase feel worth it.",
+          "t": "A relevant deal helps food delivery users decide — and feels rewarding.",
+          "w": "Discounts help less-decisive users commit, and a good, applicable deal lifts how the order feels.",
           "studies": [
             "UXR#182",
             "UXR#192"
@@ -148,21 +247,33 @@
           }
         },
         {
-          "t": "Reordering a usual is a fast, low-effort way for food delivery users to get a familiar meal.",
-          "w": "Past orders and favourite restaurants are a trusted, low-effort starting point — decisive users lean on reorder to get straight to a known, safe choice without browsing.",
+          "t": "Reordering a usual is a fast, low-effort win for food delivery users.",
+          "w": "Past orders and favourite restaurants are a trusted shortcut straight to a known, safe choice.",
           "studies": [
             "UXR#327",
             "UXR#255",
             "UXR#246",
             "UXR#359"
-          ]
+          ],
+          "quote": {
+            "text": "I just want my food and there's a way I order it and I want to order it that way every time.",
+            "attribution": "food delivery user"
+          }
+        },
+        {
+          "t": "Reviews and photos give food delivery users the confidence to choose.",
+          "w": "Users lean heavily on ratings, written reviews and real dish photos to judge a new place before ordering.",
+          "studies": [
+            "UXR#350",
+            "UXR#162",
+            "UXR#286"
+          ],
+          "quote": {
+            "text": "The first important thing for me is what people say about the restaurant.",
+            "attribution": "food delivery user, SE"
+          }
         }
-      ],
-      "jtbd": {
-        "functional": "Find something I'll enjoy fast — matching my craving, my budget, and worth the money — without opening every restaurant.",
-        "emotional": "Decide with confidence and avoid the frustration of a disappointing order.",
-        "social": "Use other people's ratings and reviews to trust a place I haven't tried."
-      }
+      ]
     },
     "order": {
       "jtbd": {
@@ -172,8 +283,8 @@
       },
       "pains": [
         {
-          "t": "Payment failures interrupt checkout for food delivery users.",
-          "w": "Payment and checkout failures disrupt ordering: SEQ analysis shows checkout is harder for new users (more steps), with the top complaints being technical/app-performance errors, payment-method problems (~18%) and voucher application - a first-time failure that can cost a new user's trust and retention.",
+          "t": "Payment and checkout failures interrupt food delivery users.",
+          "w": "SEQ analysis shows checkout is harder for new users, and the top complaints are technical/app-performance errors and payment-method problems (~18%) — first-time failures that can cost trust.",
           "studies": [
             "UXR#280",
             "UXR#246",
@@ -183,36 +294,58 @@
           ]
         },
         {
-          "t": "Vouchers that looked available get rejected at checkout — and applying the right one is too much work.",
-          "w": "Incentive amounts aren't consistent across the journey - the vast majority of users (10/11) are frustrated by a price difference between cart and checkout - and vouchers users expected are flagged expired, invalid or inapplicable at the cart. Users also want vouchers available at checkout, and (especially in TR) ask for automatic \"soft\" application rather than hunting for and applying the best deal manually - making the cart the most common abandonment point in the incentives journey.",
+          "t": "Vouchers that looked available get rejected at checkout.",
+          "w": "Vouchers users expected are flagged expired, invalid or inapplicable at the cart, and incentive amounts don't always match earlier screens.",
           "studies": [
             "UXR#182",
             "UXR#192",
-            "UXR#272",
-            "UXR#341",
-            "UXR#330"
+            "UXR#341"
           ]
         },
         {
-          "t": "Getting back to a past order is slower than it should be for food delivery users.",
-          "w": "Reorder is a top use case, but past orders are buried beneath promotions and other elements, swimlanes often don't surface the restaurants users expect, and there's no fast track from entry to checkout — so a journey that should be one tap takes several.",
+          "t": "The price changes between cart and checkout.",
+          "w": "The vast majority of users (10/11) are frustrated by a price difference between the cart and the final checkout total.",
+          "studies": [
+            "UXR#272",
+            "UXR#341"
+          ]
+        },
+        {
+          "t": "Applying the best voucher takes food delivery users too many manual steps.",
+          "w": "Users must hunt for and apply the right voucher by hand; many (especially in TR) want automatic \"soft\" application instead.",
+          "studies": [
+            "UXR#330",
+            "UXR#192",
+            "UXR#341"
+          ]
+        },
+        {
+          "t": "Getting back to a past order is slower than it should be.",
+          "w": "Reorder is a top use case, but past orders sit beneath promotions with no fast track from entry to checkout, so a one-tap job takes several.",
           "studies": [
             "UXR#359",
             "UXR#327"
+          ]
+        },
+        {
+          "t": "Food delivery users want more, more-reliable payment methods.",
+          "w": "Demand is clear for flexible options including postpaid / pay-later; the onboarding tested as easy but users still have questions on credit and repayment.",
+          "studies": [
+            "UXR#314"
           ]
         }
       ],
       "delights": [
         {
           "t": "Google/Apple Pay gives food delivery users a fast, trusted way to pay.",
-          "w": "New users called out Google Pay / Apple Pay as a welcome, trusted checkout option — for some it's the very reason they use the app over the web.",
+          "w": "New users single out Google/Apple Pay as a welcome checkout option — for some it's the reason they use the app over the web.",
           "studies": [
             "UXR#246"
           ]
         },
         {
           "t": "Cart and checkout feel easy and low-anxiety for food delivery users.",
-          "w": "The split between cart (review/manage) and checkout (finalise price and payment) matches users' mental model and reduces cognitive load, and recent additions like saved carts and pre-order confirmation are noticed and appreciated - overall users find the flow easy.",
+          "w": "The split between reviewing the cart and finalising checkout matches users' mental model, and saved carts and pre-order confirmation are noticed and appreciated.",
           "studies": [
             "UXR#341"
           ]
@@ -227,8 +360,8 @@
       },
       "pains": [
         {
-          "t": "Unreliable, jumping ETAs erode food delivery users' trust — and push them to competitors.",
-          "w": "About 25% of orders run late (an estimated €25M GMV lost as users cancel over delays), and inaccurate, jumping or stagnant ETAs are the single biggest driver of the CSAT gap versus competitors for both Food and QC. When the promised time slips with no clear reason, users switch to a faster rival for the same restaurant.",
+          "t": "Unreliable, jumping ETAs erode food delivery users' trust.",
+          "w": "About 25% of orders run late (an estimated EUR25M GMV lost to cancellations), and inaccurate or jumping ETAs are the single biggest driver of the CSAT gap versus competitors.",
           "studies": [
             "Post-Order Experience (UXR)",
             "UXR#282"
@@ -239,11 +372,26 @@
           }
         },
         {
-          "t": "Order status and real-time updates are unclear, so food delivery users are left guessing.",
-          "w": "Unclear or wrong order-status information is the #1 reason users contact support (~1.7M contacts a year), and Pandora lags competitors on \"clear, accurate, live updates\" (-12.4%) and \"knowing the rider location in real-time\" (-10%), leaving a 58% CSAT gap on restaurant orders. Proactive, accurate communication is what users say makes a platform feel reliable.",
+          "t": "Order status leaves food delivery users guessing.",
+          "w": "Unclear or wrong order-status information is the #1 reason users contact support (~1.7M contacts a year), with a 58% CSAT gap on restaurant orders.",
           "studies": [
             "Post-Order Experience (UXR)",
             "UXR#282"
+          ]
+        },
+        {
+          "t": "Pandora lags competitors on real-time rider location for food delivery users.",
+          "w": "Users rate Pandora below rivals on \"clear, accurate, live updates\" (-12.4%) and \"knowing the rider location in real-time\" (-10%).",
+          "studies": [
+            "Post-Order Experience (UXR)",
+            "UXR#282"
+          ]
+        },
+        {
+          "t": "Delays push food delivery users to a faster competitor.",
+          "w": "When the promised time slips with no clear reason, users switch to a rival offering the same restaurant faster.",
+          "studies": [
+            "Post-Order Experience (UXR)"
           ]
         }
       ],
@@ -258,38 +406,45 @@
       "pains": [
         {
           "t": "Food quality on arrival is a recurring letdown for food delivery users.",
-          "w": "Returning customers cited food-quality issues on delivered orders as a repeat frustration at the receiving moment.",
+          "w": "Returning customers cite food-quality issues on delivered orders as a repeat frustration at the receiving moment.",
           "studies": [
             "UXR#280",
             "UXR#246"
           ]
         },
         {
-          "t": "When an order is cancelled, food delivery users are left with a poor recovery path.",
-          "w": "Cancellations are large-scale (~2.6% of orders, ~22M a year, ~€226M GMV lost), driven by delays, accidental orders, item unavailability and rider unavailability, plus ~2M users needing to modify an order after placing it. The cancellation screens do little to help users recover (reorder or explore) and refund communication is weak, damaging confidence in the platform.",
+          "t": "When an order is cancelled, food delivery users get a poor recovery path.",
+          "w": "Cancellations are large-scale (~2.6% of orders, ~22M a year, ~EUR226M GMV lost); the screens do little to help users reorder or explore, and refund communication is weak.",
           "studies": [
             "Cancellation UX (UXR)",
             "Post-Order Experience (UXR)"
           ]
         },
         {
-          "t": "Getting help when something goes wrong is slow and can't capture the real problem.",
-          "w": "Support and issue resolution rate ~12% below competitors — the biggest experience gap — and help-center forms don't cover the nuance of a case (e.g. a missing item inside a set meal), pushing users to hunt for a live agent. Volumes are huge (650k+ subscribers alone contacted support in a single month), and a poor support experience measurably reduces how often people order.",
+          "t": "Getting help is slow for food delivery users.",
+          "w": "Support and issue resolution rate ~12% below competitors — the biggest experience gap — and a poor support experience measurably reduces how often people order.",
           "studies": [
             "UXR#325",
             "UXR#339",
             "Post-Order Experience (UXR)"
+          ]
+        },
+        {
+          "t": "Help forms can't capture the real problem for food delivery users.",
+          "w": "The help-center form doesn't cover case nuance (e.g. a missing item inside a set meal), pushing users to hunt for a live agent.",
+          "studies": [
+            "UXR#325"
           ],
           "quote": {
             "text": "There's no breakdown of the set, so I can't actually choose the item that's missing.",
-            "attribution": "foodpanda user, HK"
+            "attribution": "food delivery user, HK"
           }
         }
       ],
       "delights": [
         {
           "t": "A good rider handover creates a real emotional connection for food delivery users.",
-          "w": "The human moment at the door is a genuine bright spot — users form positive connections with riders, and most actively want an after-delivery way to thank or tip them, which reinforces the goodwill and their intent to reorder.",
+          "w": "The human moment at the door is a genuine bright spot, and most users actively want an after-delivery way to thank or tip the rider — reinforcing goodwill and reorder intent.",
           "studies": [
             "UXR#282",
             "Post-Order Rider Tips (UXR)"
@@ -300,76 +455,132 @@
   },
   "qc": {
     "awareness": {
+      "jtbd": {
+        "functional": "Restock what I need fast — heavy or urgent items — without a trip to the shop.",
+        "emotional": "Trust that groceries I can't physically inspect will still be fresh and good.",
+        "social": "Keep the household stocked with the brands and variety we rely on."
+      },
       "pains": [
         {
           "t": "New QC users are gated by location and sign-up before they can explore.",
-          "w": "The shared app onboarding asks for a location and pushes sign-up before showing value, and the first screen feels overwhelming - friction for newcomers arriving for groceries. Evidence on location is mixed (some accept it as normal; others resent the sign-up wall that follows); the common frustration is being blocked from exploring first.",
+          "w": "The shared onboarding asks for a location and pushes sign-up before showing value; evidence on the location step is mixed, but the block on exploring first is the common frustration.",
           "studies": [
             "UXR#280",
             "UXR#300"
           ]
         },
         {
-          "t": "QC users perceive Pandora groceries as more expensive than shopping in person.",
-          "w": "Affordability is the critical barrier: it blocks ~40% of new users and drives ~36% of existing users to competitors - driven by perceived high product prices and fees more than a lack of promotions - so lower prices are the single most effective acquisition trigger (62%). For recurring restock, users prefer large online supermarkets for range and pricing. Value is also hard to judge overall: Pro's savings and loyalty rewards feel unclear (many who'd break even never subscribe), and competitors' loyalty programs feel stronger.",
+          "t": "QC users assume search is for restaurants, so the grocery path goes unused.",
+          "w": "New-to-QC users think search means restaurants and active users go straight to shop icons, so grocery discovery is bypassed.",
           "studies": [
-            "UXR#312",
-            "UXR#255",
-            "UXR#285",
-            "UXR#335",
-            "UXR#343",
-            "UXR#346",
-            "Conscious Consumers (Pandora UX)",
-            "UXR#317",
-            "UXR#320"
+            "UXR#379",
+            "UXR#296"
           ]
         },
         {
-          "t": "Pandora's grocery offer is easy to miss and hard to trust for produce you can't see.",
-          "w": "New-to-QC users assume search is for restaurants, and a highlighted single-shop shortcut (e.g. d-mart) leads many to believe it's the only grocery option - so they never explore the full assortment and bounce when that shop lacks an item. Pandora is also pigeonholed as a solution for urgent, small needs, causing 37-45% to switch to competitors or physical stores for larger, planned weekly hauls; 32% of new users still prefer physical stores as more inspiring for discovery, and 45% value the social side of shopping. Cross-vertical awareness is low - only ~60% know Pandora offers non-food verticals.",
+          "t": "Many QC users think one shop is all Pandora offers.",
+          "w": "A highlighted single-shop shortcut (e.g. d-mart) leads users to believe it's the only grocery option, so they never explore the shop landing page and bounce when it lacks an item.",
           "studies": [
-            "UXR#379",
-            "UXR#312",
-            "UXR#253",
-            "UXR#255",
             "UXR#296",
+            "UXR#312"
+          ]
+        },
+        {
+          "t": "QC users distrust fresh produce they can't see.",
+          "w": "Not being able to inspect freshness is a top barrier to trying groceries online (e.g. 49% TR, 40% SG, 26% HK), and produce trust is weak (new users rate it 4.0/7).",
+          "studies": [
+            "UXR#312",
+            "UXR#317",
+            "UXR#299"
+          ],
+          "quote": {
+            "text": "When I buy vegetables online, I can't see myself, but I want to know if the quality is good, fresh and not damaged.",
+            "attribution": "QC user"
+          }
+        },
+        {
+          "t": "QC users perceive Pandora groceries as more expensive than shopping in person.",
+          "w": "Affordability blocks ~40% of new users and drives ~36% of existing users away; perceived high prices and fees (not lack of promos) are the core issue, so lower prices are the #1 acquisition trigger (62%).",
+          "studies": [
+            "UXR#312",
             "UXR#317"
+          ],
+          "quote": {
+            "text": "This is $50 and then you're telling me it was $75? I doubt it — the original price is a bit too much.",
+            "attribution": "QC user, HK"
+          }
+        },
+        {
+          "t": "Pandora is pigeonholed for urgent, small QC needs.",
+          "w": "Users see QC as a solution for small/urgent orders, so 37-45% switch to competitors or physical stores for larger, planned weekly hauls.",
+          "studies": [
+            "UXR#317"
+          ]
+        },
+        {
+          "t": "Some QC users still prefer physical stores for discovery.",
+          "w": "32% find brick-and-mortar more inspiring for discovery and 45% value the social side of shopping, pulling them away from the app for browsing.",
+          "studies": [
+            "UXR#317",
+            "UXR#255"
+          ]
+        },
+        {
+          "t": "Pro and loyalty value is unclear to QC users.",
+          "w": "Pro's savings and loyalty rewards feel hard to judge — many who'd break even never subscribe — and competitors' loyalty programs feel stronger.",
+          "studies": [
+            "UXR#335",
+            "UXR#343",
+            "UXR#320",
+            "UXR#346"
+          ]
+        },
+        {
+          "t": "Some EU QC users prefer supporting local shops.",
+          "w": "A preference for local, independent grocers is a barrier to trying platform groceries in several EU markets.",
+          "studies": [
+            "Conscious Consumers (Pandora UX)"
           ]
         }
       ],
       "delights": [
         {
           "t": "Reordering usuals makes restock effortless for QC users.",
-          "w": "Previous orders are the natural starting point for recurring grocery restock — users go straight from \"what's missing\" to a familiar basket, which is the low-effort backbone of the QC habit.",
+          "w": "Previous orders are the natural starting point for recurring restock — users go straight from \"what's missing\" to a familiar basket.",
           "studies": [
             "UXR#255",
             "UXR#359"
           ]
         }
-      ],
-      "jtbd": {
-        "functional": "Restock what I need fast — heavy or urgent items — without a trip to the shop.",
-        "emotional": "Trust that groceries I can't physically inspect will still be fresh and good.",
-        "social": "Keep the household stocked with the brands and variety we rely on."
-      }
+      ]
     },
     "browse": {
+      "jtbd": {
+        "functional": "Get the specific items I need, fast and at the best price — ideally all in one basket.",
+        "emotional": "Feel I'm getting a good deal without turning it into a chore.",
+        "social": "Keep the household stocked with what everyone needs."
+      },
       "pains": [
         {
-          "t": "QC users can't find everything they need in one place — assortment gaps push them to competitors.",
-          "w": "Assortment is the #1 retention barrier: the lack of variety, fresh produce and multi-vendor ordering drives over 50% of existing users to competitors or back to physical stores (especially APAC). Users switch because they can't find specialty foods (32%), household/cleaning supplies (29%), personal care (17%) or baby products (15%), and 36-47% cite the lack of multi-vendor ordering.",
+          "t": "QC users can't find everything they need in one place.",
+          "w": "Assortment is the #1 retention barrier: gaps drive over 50% of existing users to competitors or back to physical stores, and out-of-stock items compound it.",
           "studies": [
             "UXR#379",
             "UXR#312",
-            "UXR#324",
-            "UXR#285",
-            "UXR#359",
+            "UXR#317",
+            "UXR#359"
+          ]
+        },
+        {
+          "t": "QC users can't find whole categories they want.",
+          "w": "Users leave because they can't find specialty foods (32%), household/cleaning supplies (29%), personal care (17%) or baby products (15%).",
+          "studies": [
             "UXR#317"
           ]
         },
         {
-          "t": "A shop-first layout forces QC users to do the price comparison themselves.",
-          "w": "76% of QC users know the items they want before opening the app, but the shop-first structure makes them browse store by store and mentally aggregate prices — extra work when building a multi-item basket, the same side-by-side comparison need seen across the platform.",
+          "t": "A shop-first layout forces QC users to compare prices themselves.",
+          "w": "76% know the items they want before opening, but the shop-first structure makes them browse store by store and mentally aggregate prices.",
           "studies": [
             "UXR#379",
             "UXR#312",
@@ -381,63 +592,95 @@
           }
         },
         {
+          "t": "The anchor item dictates the shop, so QC users settle for a worse deal.",
+          "w": "Users pick the shop that has their most important item and accept the rest, rather than getting the best price across their basket.",
+          "studies": [
+            "UXR#379"
+          ],
+          "quote": {
+            "text": "Otherwise I will just go with my familiar one... I will not be getting the best deal maybe.",
+            "attribution": "QC user"
+          }
+        },
+        {
           "t": "QC users can't judge product quality or value from the listing.",
-          "w": "Key grocery-decision details - size, weight, expiry, per-unit price, images, nutrition, authenticity - are missing or unclear, forcing \"blind buys\" or a retreat to familiar items. Trust in fresh produce is especially weak (new users rate it 4.0/7), and 20-26% of existing users are deterred by limited stock and the lack of visible freshness/expiry information. Users want reliable quality guarantees from Pandora itself - not just peer reviews, which feel low-value for everyday groceries - and worry about unreliable reviews and counterfeits in higher-stakes categories like Health & Beauty; nutrition and sustainability transparency is increasingly expected too.",
+          "w": "Size, weight, expiry, per-unit price, images and nutrition are missing or unclear, forcing blind buys or a retreat to familiar items.",
           "studies": [
             "UXR#312",
             "UXR#324",
-            "UXR#299",
-            "UXR#285",
-            "Conscious Consumers (Pandora UX)",
             "UXR#317"
           ]
         },
         {
-          "t": "QC deals are hard to find and hard to understand.",
-          "w": "Offers like Mix & Match and Pro discounts are confusing, and incentives are scattered with unclear terms, so users struggle to tell what applies and how much they'll save while shopping.",
+          "t": "Grocery deals are hard for QC users to find and understand.",
+          "w": "Offers like Mix & Match and Pro discounts are confusing, scattered and have unclear terms, so users can't tell what applies while shopping.",
           "studies": [
             "UXR#312",
             "UXR#182",
             "UXR#192",
             "UXR#235",
-            "UXR#285",
-            "UXR#330",
-            "UXR#275",
-            "Vendor Funded Deals (UXR)"
+            "UXR#285"
+          ]
+        },
+        {
+          "t": "Peer reviews feel low-value to QC users, who want quality guarantees from Pandora.",
+          "w": "For everyday groceries, writing and reading peer reviews feels high-effort/low-reward; users would rather Pandora guarantee freshness and safe delivery.",
+          "studies": [
+            "UXR#299"
+          ],
+          "quote": {
+            "text": "It is nice to see feedback, but not nice to give it — I don't want to write long reviews.",
+            "attribution": "QC user"
+          }
+        },
+        {
+          "t": "Counterfeit and authenticity worries deter QC users in Health & Beauty.",
+          "w": "Unreliable reviews and fears of fakes are real barriers for higher-stakes categories like Health & Beauty.",
+          "studies": [
+            "UXR#285"
           ]
         }
       ],
       "delights": [
         {
-          "t": "Finding familiar or unique products and brands delights QC users.",
-          "w": "Locating trusted staples or special/unique items is a bright spot - and users are genuinely surprised and delighted to discover specialty shops (pharmacy, deli, flowers, gifts) they didn't know Pandora offered, expanding their sense of what they can get.",
+          "t": "Finding familiar or unique products delights QC users.",
+          "w": "Locating trusted staples or special/unique items (including harder-to-find international brands) is a bright spot in selection.",
           "studies": [
-            "UXR#312",
+            "UXR#312"
+          ]
+        },
+        {
+          "t": "Discovering specialty shops surprises and delights QC users.",
+          "w": "Users are genuinely pleased to find pharmacy, deli, flowers and gift shops they didn't know Pandora offered.",
+          "studies": [
             "UXR#296"
           ]
         },
         {
           "t": "A valuable, relevant deal makes QC users feel they're shopping smart.",
-          "w": "Worthwhile discounts are a highlight of browsing groceries and help users feel they're getting real value — reinforcing the deal-driven reason many choose QC.",
+          "w": "Worthwhile discounts are a highlight of browsing groceries and reinforce the deal-driven reason many choose QC.",
           "studies": [
             "UXR#312",
             "UXR#182",
             "UXR#192"
-          ]
+          ],
+          "quote": {
+            "text": "Because I know there will be some products on discount, and it's going to be an advantage.",
+            "attribution": "QC user"
+          }
         },
         {
           "t": "Smart, personalised search delights QC users.",
-          "w": "Users feel understood when search remembers their behaviour - \"Past Purchases\" and favourites surfaced first - and when auto-suggestions cleanly narrow by sub-category and separate shops from restaurants; the prominent search bar makes starting easy.",
+          "w": "Users feel understood when search surfaces \"Past Purchases\" and favourites first and cleanly separates shops from restaurants.",
           "studies": [
             "UXR#324"
-          ]
+          ],
+          "quote": {
+            "text": "I like it that someone already picked the best prices.",
+            "attribution": "QC user, SG"
+          }
         }
-      ],
-      "jtbd": {
-        "functional": "Get the specific items I need, fast and at the best price — ideally all in one basket.",
-        "emotional": "Feel I'm getting a good deal without turning it into a chore.",
-        "social": "Keep the household stocked with what everyone needs."
-      }
+      ]
     },
     "order": {
       "jtbd": {
@@ -448,7 +691,7 @@
       "pains": [
         {
           "t": "Payment failures interrupt checkout for QC users.",
-          "w": "Account and payment issues at the point of paying disrupt QC orders - payment processing failures are the primary technical barrier, highest in Turkey (16%) - the same checkout failures seen across the app.",
+          "w": "Payment processing is the primary technical barrier, highest in Turkey (16%), disrupting orders at the point of paying.",
           "studies": [
             "UXR#280",
             "UXR#312",
@@ -458,30 +701,45 @@
         },
         {
           "t": "Fees and minimums punish QC users for ordering across shops.",
-          "w": "Delivery fee, minimum order value and Pro benefits make multi-shop baskets uneconomical (12/12 sessions), and there's no multicart to shop several stores at once. New-to-QC users don't understand why they can't add items from different shops to one cart - it violates basic e-commerce expectations and leads to task abandonment - and users lose track of which store they're in.",
+          "w": "Delivery fee, MOV and Pro benefits make multi-shop baskets uneconomical (12/12 sessions), so users lock into one shop or delay.",
           "studies": [
             "UXR#379",
+            "UXR#312",
+            "UXR#334"
+          ]
+        },
+        {
+          "t": "There's no multicart, so QC users can't shop several stores at once.",
+          "w": "New-to-QC users don't understand why they can't add items from different shops to one cart — it breaks basic e-commerce expectations and leads to abandonment.",
+          "studies": [
             "UXR#312",
             "UXR#324",
             "UXR#334"
           ]
         },
         {
-          "t": "QC users struggle to confirm their real savings and apply the right voucher at the cart.",
-          "w": "Understanding total savings and comparing value in the cart is hard, coupons and discounts are unclear or inconsistent with earlier screens, and applying the best voucher takes manual effort — a moment where mismatched amounts drive abandonment.",
+          "t": "QC users can't confirm their real savings in the cart.",
+          "w": "Understanding total savings and comparing value is hard, so users aren't sure what they're actually paying after discounts.",
           "studies": [
             "UXR#312",
             "UXR#182",
             "UXR#192",
-            "UXR#341",
             "UXR#330"
+          ]
+        },
+        {
+          "t": "Coupons are unclear or inconsistent with earlier screens for QC users.",
+          "w": "Discount amounts shown earlier don't always match the cart, and applying the right coupon takes manual effort.",
+          "studies": [
+            "UXR#182",
+            "UXR#341"
           ]
         }
       ],
       "delights": [
         {
           "t": "A clear cart-and-checkout flow makes finishing a QC order feel easy.",
-          "w": "The cart/checkout separation matches how users think and keeps a larger grocery basket manageable; saved carts and multicart are noticed and appreciated, and users generally find completing the order straightforward.",
+          "w": "The cart/checkout separation keeps a larger grocery basket manageable, and saved carts and multicart are noticed and appreciated.",
           "studies": [
             "UXR#341"
           ]
@@ -496,19 +754,33 @@
       },
       "pains": [
         {
-          "t": "QC users lose trust when delivery runs late with no real-time updates.",
-          "w": "Delays and unreliable delivery times are a key waiting-stage frustration, made worse by a lack of real-time updates and notifications. Restock shoppers especially want to know in advance when an order will arrive, so they can plan around it.",
+          "t": "QC users lose trust when delivery runs late.",
+          "w": "Delays and unreliable delivery times are a key waiting-stage frustration, with a ~28% CSAT gap for QC versus competitors.",
           "studies": [
             "UXR#312",
             "UXR#255",
             "Post-Order Experience (UXR)"
           ]
+        },
+        {
+          "t": "QC users are left without real-time updates.",
+          "w": "A lack of live updates and notifications means users must keep re-opening the app to find out what's happening.",
+          "studies": [
+            "UXR#312"
+          ]
+        },
+        {
+          "t": "Restock QC users want to know the delivery time in advance.",
+          "w": "For planned restock, users want a dependable ETA up front so they can organise their day around it.",
+          "studies": [
+            "UXR#255"
+          ]
         }
       ],
       "delights": [
         {
-          "t": "A live map and clear progress updates turn waiting into reassurance for QC users.",
-          "w": "When present, map and progress indicators (and notifications, when enabled) reassure users their order is on track and reduce anxious re-checking.",
+          "t": "A live map and clear progress turn waiting into reassurance for QC users.",
+          "w": "When present, map and progress indicators (and notifications, when enabled) reassure users and cut anxious re-checking.",
           "studies": [
             "UXR#312"
           ]
@@ -523,16 +795,20 @@
       },
       "pains": [
         {
-          "t": "Fresh produce arrives in poor condition, or items don't match what QC users ordered.",
-          "w": "Poor-quality fresh produce and item mismatches are top receiving-stage frustrations; a bad delivery reinforces the very quality distrust that keeps people from ordering groceries online in the first place.",
+          "t": "Fresh produce arrives in poor condition for QC users.",
+          "w": "Poor-quality produce and item mismatches are top receiving frustrations, reinforcing the quality distrust that keeps people from ordering groceries online.",
           "studies": [
             "UXR#312",
             "UXR#317"
-          ]
+          ],
+          "quote": {
+            "text": "I check the expiry date — it's always what I do when I go to physical shops.",
+            "attribution": "QC user"
+          }
         },
         {
-          "t": "Careless packaging leaves QC users unsure everything even arrived.",
-          "w": "Fresh, frozen and fragile items are packed together, plastic feels excessive, and there's no easy way to verify the full order was delivered — undermining confidence at the moment of unpacking.",
+          "t": "Careless packaging leaves QC users unsure everything arrived.",
+          "w": "Fresh, frozen and fragile items are packed together, plastic feels excessive, and there's no easy way to verify the full order was delivered.",
           "studies": [
             "UXR#312",
             "Conscious Consumers (Pandora UX)"
@@ -540,7 +816,7 @@
         },
         {
           "t": "When a QC order goes wrong, cancellations and slow support let QC users down.",
-          "w": "Grocery orders get cancelled for item unavailability and delays, and when users need help, resolution lags competitors (~12% behind, ~28% CSAT gap for QC on communication) while help-center forms often can't capture the specific problem (missing/mismatched items) — so a bad moment isn't recovered well.",
+          "w": "Orders get cancelled for item unavailability, and when users need help, resolution lags competitors while forms can't capture the specific problem.",
           "studies": [
             "Post-Order Experience (UXR)",
             "Cancellation UX (UXR)",
@@ -550,8 +826,8 @@
       ],
       "delights": [
         {
-          "t": "Thoughtful packaging — and the occasional surprise — makes a QC order feel cared for.",
-          "w": "On-time delivery, considerate packaging done right, and small marketing surprises in the bag are the moments that make the receiving experience feel positive.",
+          "t": "Thoughtful packaging and small surprises make a QC order feel cared for.",
+          "w": "On-time delivery, considerate packaging and the occasional surprise in the bag make the receiving moment feel positive.",
           "studies": [
             "UXR#312"
           ]
@@ -561,10 +837,15 @@
   },
   "pickup": {
     "awareness": {
+      "jtbd": {
+        "functional": "Save time and money by slotting a food run into my existing routine — commute, lunch break — without going out of my way.",
+        "emotional": "Stay in control of quality and skip the awkwardness of ordering in person or a failed delivery.",
+        "social": "Get in and out on my own terms, without crowds or awkward interaction."
+      },
       "pains": [
         {
-          "t": "Delivery-only users don't see a reason to try Pickup.",
-          "w": "Adoption is blocked by real-world friction (traffic, parking), no clear incentive (Pro already makes delivery free, and Pickup minimums aren't cheaper) and a fear the experience will fail (cold food, waiting). Cross-region survey data confirms strong, immediate financial incentives (discounts, free items, cashback) are the single most compelling trigger for a first Pickup trial, and that delivery-only users routinely multi-home across apps with low platform loyalty.",
+          "t": "Delivery-only users see no incentive to try Pickup.",
+          "w": "There's no clear reason to switch: Pro already makes delivery free and Pickup minimums aren't cheaper, and survey data shows strong financial incentives are the #1 trigger for a first trial.",
           "studies": [
             "UXR#351",
             "UXR#357",
@@ -576,8 +857,19 @@
           }
         },
         {
-          "t": "The way into Pickup is hidden — new and light Pickup users miss it entirely.",
-          "w": "The Pickup entry point sits in a secondary horizontal scroll and is easily missed, while promotional banners are ignored as clutter (assumed high minimum spend), blocking a key path into Pickup (8/11).",
+          "t": "Real-world friction puts delivery-only users off Pickup.",
+          "w": "Traffic and parking make collecting feel like a hassle not worth the effort.",
+          "studies": [
+            "UXR#351"
+          ],
+          "quote": {
+            "text": "It's just ridiculous to lose time in the middle of traffic for the food.",
+            "attribution": "delivery-only user, TR"
+          }
+        },
+        {
+          "t": "The way into Pickup is hidden — new and light Pickup users miss it.",
+          "w": "The entry point sits in a secondary horizontal scroll and is easily missed, blocking a key path into Pickup (8/11).",
           "studies": [
             "UXR#351",
             "UXR#253"
@@ -586,14 +878,23 @@
             "text": "The pickup option was actually quite hard for me to find because I have to scroll... it's a little bit hidden.",
             "attribution": "Pickup user, CZ"
           }
+        },
+        {
+          "t": "Cross-vertical awareness is low, so many people don't know Pickup exists.",
+          "w": "Only ~60% in each market know Pandora offers non-food services at all, capping Pickup awareness.",
+          "studies": [
+            "UXR#253"
+          ]
+        },
+        {
+          "t": "Promo banners are ignored as clutter by Pickup users.",
+          "w": "Promotional banners are dismissed as noise (assumed high minimum spend), so they fail to pull users into Pickup.",
+          "studies": [
+            "UXR#351"
+          ]
         }
       ],
-      "delights": [],
-      "jtbd": {
-        "functional": "Save time and money by slotting a food run into my existing routine — commute, lunch break — without going out of my way.",
-        "emotional": "Stay in control of quality and skip the awkwardness of ordering in person or a failed delivery.",
-        "social": "Get in and out on my own terms, without crowds or awkward interaction."
-      }
+      "delights": []
     },
     "browse": {
       "jtbd": {
@@ -603,8 +904,8 @@
       },
       "pains": [
         {
-          "t": "Pickup users have to judge which places are even viable themselves — distance, parking and rating aren't surfaced.",
-          "w": "Before price or food, Pickup users apply a hard viability gate (proximity under ~500m, easy parking, high rating), but the app doesn't surface these clearly, so they filter mentally and distrust the sorting (8/11).",
+          "t": "Pickup users must judge which places are viable themselves.",
+          "w": "Before price or food, users apply a hard viability gate (proximity, parking, rating) but the app doesn't surface these, so they filter mentally and distrust the sorting.",
           "studies": [
             "UXR#351",
             "UXR#357"
@@ -615,39 +916,53 @@
           }
         },
         {
-          "t": "Broken discovery tools push Pickup users into tunnel vision.",
-          "w": "The map is outdated and low-value and filters feel weak, so Pickup users ignore most of the interface and rely only on Search or scanning for pink discount tags — going blind to relevant options (9/11).",
+          "t": "A broken, outdated map fails Pickup users.",
+          "w": "The map is low-value and out of date, so users can't rely on it to find nearby options.",
           "studies": [
             "UXR#351"
           ],
           "quote": {
-            "text": "That map is really old... now it's only showing that it's an empty place.",
+            "text": "That map is really old... now it's only showing an empty place.",
             "attribution": "Pickup user, FI"
           }
         },
         {
-          "t": "Pickup users browse defensively because they can't trust the price or the mode.",
-          "w": "Menu prices don't reliably show the discounted Pickup price and the app sometimes reverts to Delivery, so users treat high prices as a warning sign and add items to the cart just to verify the real total (7/11).",
+          "t": "Weak filters push Pickup users into tunnel vision.",
+          "w": "With filters feeling weak, users ignore most of the interface and only scan for pink discount tags or use Search, going blind to relevant options.",
+          "studies": [
+            "UXR#351"
+          ]
+        },
+        {
+          "t": "Menu prices don't show the discounted Pickup price.",
+          "w": "Users can't trust that the price reflects Pickup, so they treat high prices as a warning and add items to the cart just to check.",
           "studies": [
             "UXR#351"
           ],
           "quote": {
-            "text": "Sometimes the price is not right because somehow it changed to delivery... So I just swap it to pickup.",
+            "text": "Sometimes the price is not right because somehow it changed to delivery... so I just swap it to pickup.",
             "attribution": "Pickup user, HK"
           }
+        },
+        {
+          "t": "The app sometimes reverts to Delivery, breaking Pickup users' trust.",
+          "w": "An unexpected mode switch back to Delivery makes users double-check everything, undermining confidence in the flow.",
+          "studies": [
+            "UXR#351"
+          ]
         }
       ],
       "delights": [
         {
           "t": "Reorder and 'Popular' shortcuts let Pickup users choose fast.",
-          "w": "Heavy and Pickup-only users lean on Reorder, and lighter users use Popular/Recommendations swimlanes, to cut straight to a confident choice.",
+          "w": "Heavy users lean on Reorder and lighter users on Popular/Recommendations to cut straight to a confident choice.",
           "studies": [
             "UXR#351"
           ]
         },
         {
           "t": "Authentic food photos build Pickup users' trust in Pandora.",
-          "w": "Users easily spot competitors' AI-generated food images and find them off-putting, which increases their trust in Pandora's more authentic imagery.",
+          "w": "Users easily spot competitors' AI-generated images and find them off-putting, which raises trust in Pandora's more authentic imagery.",
           "studies": [
             "UXR#351"
           ],
@@ -666,29 +981,43 @@
       },
       "pains": [
         {
-          "t": "Payment failures interrupt checkout for Pickup users.",
-          "w": "The shared checkout payment failures also hit Pickup orders at the point of payment.",
+          "t": "Confirming the real discounted total is hard work for Pickup users.",
+          "w": "Discounts don't auto-apply and vouchers must be hunted manually, so users use the cart as a calculator to see the true price.",
           "studies": [
-            "UXR#280"
-          ]
-        },
-        {
-          "t": "Confirming the real discounted total is hard work — so Pickup users price-check competitors and may abandon.",
-          "w": "Discounts don't auto-apply and vouchers must be hunted manually, so users use the cart as a calculator and build parallel carts in competitor apps to compare the final total — churning at the last second if Pandora is pricier (7/11).",
-          "studies": [
-            "UXR#351",
-            "UXR#357"
+            "UXR#351"
           ],
           "quote": {
             "text": "Sometimes the app can't show the price after discount... so I put the food in my cart just to see the low price.",
             "attribution": "Pickup user, HK"
           }
+        },
+        {
+          "t": "Vouchers don't apply automatically for Pickup users.",
+          "w": "Users must manually find and apply the best voucher, adding effort right before they commit.",
+          "studies": [
+            "UXR#351"
+          ]
+        },
+        {
+          "t": "Pickup users price-check competitors and may abandon at the last second.",
+          "w": "Value-seeking users build parallel carts in 2-3 competitor apps and churn if Pandora is pricier, with low platform loyalty.",
+          "studies": [
+            "UXR#351",
+            "UXR#357"
+          ]
+        },
+        {
+          "t": "Payment failures interrupt checkout for Pickup users.",
+          "w": "The shared checkout payment failures also hit Pickup orders at the point of payment.",
+          "studies": [
+            "UXR#280"
+          ]
         }
       ],
       "delights": [
         {
           "t": "The app's suggested best voucher is a feature Pickup users trust.",
-          "w": "In the voucher step, the app-suggested best voucher is called out as a trusted, effort-saving help at checkout.",
+          "w": "In the voucher step, the app-suggested best voucher is called out as a trusted, effort-saving help.",
           "studies": [
             "UXR#351"
           ]
@@ -703,8 +1032,8 @@
       },
       "pains": [
         {
-          "t": "Unreliable 'ready for collection' times are Pickup users' single biggest frustration.",
-          "w": "The readiness estimate is so inaccurate that users regularly wait 10–30 minutes at the counter, which erases Pickup's time-saving promise; many now arrive deliberately late or call ahead to check (9/11). This is the #1 pain in the study.",
+          "t": "Unreliable 'ready for collection' times are Pickup users' biggest frustration.",
+          "w": "The readiness estimate is so inaccurate that users wait 10-30 minutes at the counter, erasing Pickup's time-saving promise; many now arrive late on purpose or call ahead.",
           "studies": [
             "UXR#351"
           ],
@@ -712,6 +1041,13 @@
             "text": "The app shows 10 minutes, but actually the waiting time is 20 minutes... I need to wait in front of the shop.",
             "attribution": "Pickup user, HK"
           }
+        },
+        {
+          "t": "There's no 'leave now' nudge, so Pickup users guess when to set off.",
+          "w": "Without a prompt tied to prep time, users have to estimate when to leave, and often mistime the trip.",
+          "studies": [
+            "UXR#351"
+          ]
         }
       ],
       "delights": []
@@ -724,8 +1060,15 @@
       },
       "pains": [
         {
-          "t": "Scheduled Pickup orders arrive cold — prepared hours too early.",
-          "w": "When users schedule for later, restaurants often miss the pre-order flag and prepare the food hours ahead, so users collect cold food — a failure that breaks the core Pickup promise at the moment of collection.",
+          "t": "Scheduled Pickup orders arrive cold.",
+          "w": "When users schedule for later, restaurants often miss the pre-order flag and prepare hours early, so users collect cold food — breaking the core promise.",
+          "studies": [
+            "UXR#351"
+          ]
+        },
+        {
+          "t": "Finding the collection point in-store is unclear for Pickup users.",
+          "w": "There's little in-app guidance on where to collect, so users are unsure where to go once they arrive.",
           "studies": [
             "UXR#351"
           ]
