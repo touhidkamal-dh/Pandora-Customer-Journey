@@ -384,11 +384,6 @@ function renderCurve(){
     const parts=[hit,ring,c,sc,nl];if(on&&!REDUCE()){const rp=document.createElementNS(NS,"circle");rp.setAttribute("class","ripple");rp.setAttribute("cx",p.x);rp.setAttribute("cy",p.y);rp.setAttribute("r",9);parts.unshift(rp);}g.append(...parts);
     g.onclick=()=>openStage(p.s.id,g);
     g.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openStage(p.s.id,g);}};svg.appendChild(g);});
-  // pointer guide (added last so it sits above the fills)
-  guideEl=document.createElementNS(NS,"line");guideEl.setAttribute("class","guide");
-  guideEl.setAttribute("x1",-99);guideEl.setAttribute("x2",-99);guideEl.setAttribute("y1",top-8);guideEl.setAttribute("y2",bot+2);
-  svg.appendChild(guideEl);
-  curvePts=pts;bindCurvePointer(svg);
 }
 function jtbd(s){const box=el("div","jtbd");
   const dc=contentFor(vert,s.id).jtbd;
@@ -433,8 +428,6 @@ function renderOverview(){const c=el("section","stage");
     o.onclick=()=>openStage(s.id,o.querySelector(".im"));
     o.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openStage(s.id,o.querySelector(".im"));}};g.appendChild(o);});
   c.appendChild(g);
-  c.appendChild(el("div","note",
-    `<b>How to update this site.</b> Pain points and delights are the only editable content — they live in <b>pandora-content.json</b>. Everything else (stages, illustrations, JTBDs, layout) is locked in the page. SEQ values are a placeholder proxy from the pain/delight balance until real Single Ease Question survey results are added.`));
   return c;}
 function render(){const m=$("#main");m.innerHTML="";m.appendChild(active==="all"?renderOverview():renderStage(STAGES[vert].stages.find(x=>x.id===active)||STAGES[vert].stages[0]));}
 
